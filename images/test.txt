@@ -1,0 +1,7 @@
+logo.png
+shop1.jpg
+shop2.jpg
+shop3.jpg
+shop4.jpg
+shop5.jpg
+shop6.jpg
