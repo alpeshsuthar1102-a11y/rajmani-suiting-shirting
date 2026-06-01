@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +35,21 @@ top:0;
 z-index:1000;
 }
 
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-area img{
+height:80px;
+width:80px;
+border-radius:50%;
+object-fit:cover;
+background:white;
+padding:5px;
+}
+
 .logo{
 font-size:30px;
 font-weight:bold;
@@ -57,7 +71,7 @@ color:#d4af37;
 .hero{
 background:
 linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url('images/shop1.jpg');
+url('./shop1.jpeg');
 
 background-size:cover;
 background-position:center;
@@ -268,8 +282,14 @@ font-size:18px;
 
 <header>
 
+<div class="logo-area">
+
+<img src="./logo.png" alt="Rajmani Logo">
+
 <div class="logo">
 RAJMANI SUITING SHIRTING
+</div>
+
 </div>
 
 <nav>
@@ -398,13 +418,13 @@ Gallery
 
 <div class="gallery">
 
-<img src="images/shop1.jpg" alt="">
-<img src="images/shop2.jpg" alt="">
-<img src="images/shop3.jpg" alt="">
-<img src="images/shop4.jpg" alt="">
-<img src="images/shop5.jpg" alt="">
-<img src="images/shop6.jpg" alt="">
-<img src="images/shop7.jpg" alt="">
+<img src="./shop1.jpeg" alt="Shop Photo 1">
+<img src="./shop2.jpeg" alt="Shop Photo 2">
+<img src="./shop3.jpeg" alt="Shop Photo 3">
+<img src="./shop4.jpeg" alt="Shop Photo 4">
+<img src="./shop5.jpeg" alt="Shop Photo 5">
+<img src="./shop6.jpeg" alt="Shop Photo 6">
+<img src="./shop7.jpeg" alt="Shop Photo 7">
 
 </div>
 
