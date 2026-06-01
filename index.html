@@ -1,234 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Rajmani Suitting Shirting</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajmani Suiting Shirting</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;scroll-behavior:smooth;}
-body{background:#f5f5f5;color:#333;}
+
+html{
+scroll-behavior:smooth;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
 
 header{
-background:linear-gradient(135deg,#111,#333);
-color:white;
-padding:20px;
-text-align:center;
-animation:fadeDown 1s ease;
-}
-header h1{font-size:28px;}
-header p{opacity:0.8;}
-
-nav{
+background:#0d1b3e;
+padding:20px 8%;
 display:flex;
-justify-content:center;
-gap:15px;
-background:#fff;
-padding:10px;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
 position:sticky;
 top:0;
 z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-animation:fadeDown 1s ease;
 }
-nav a{color:#333;text-decoration:none;font-weight:bold;}
 
-.slider{
-position:relative;
-width:100%;
-height:320px;
-overflow:hidden;
-}
-.slides{
+.logo-area{
 display:flex;
-width:300%;
-animation:slide 12s infinite;
+align-items:center;
+gap:15px;
 }
-.slide{
-width:100%;
-flex-shrink:0;
-height:320px;
+
+.logo-area img{
+height:80px;
+width:80px;
+border-radius:50%;
+object-fit:cover;
+background:white;
+padding:5px;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#d4af37;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:0.3s;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+.hero{
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('./shop1.jpeg');
+
 background-size:cover;
 background-position:center;
-}
-.slide1{background-image:url('https://images.unsplash.com/photo-1520975958225-0f5f6d1a0c6c');}
-.slide2{background-image:url('https://images.unsplash.com/photo-1521334884684-d80222895322');}
-.slide3{background-image:url('https://images.unsplash.com/photo-1593032465171-8a4f7c1c2a1b');}
 
-@keyframes slide{
-0%{transform:translateX(0)}
-33%{transform:translateX(-100%)}
-66%{transform:translateX(-200%)}
-100%{transform:translateX(0)}
-}
+height:90vh;
 
-.section{padding:40px 20px;text-align:center;animation:fadeUp 1s ease;}
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-}
-.card{
-background:white;
-padding:10px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-transition:0.3s;
-animation:fadeUp 1s ease;
-}
-.card:hover{transform:translateY(-5px);}
-.card img{width:100%;border-radius:10px;}
-.btn{display:inline-block;padding:8px 10px;margin-top:5px;border-radius:5px;text-decoration:none;font-size:14px;}
-.whatsapp{background:green;color:white;}
-.meesho{background:#ff3e6c;color:white;}
-
-.reviews{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-}
-.review{
-background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.review-form{
-background:white;
-padding:15px;
-border-radius:10px;
-margin-bottom:20px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-.review-form input,.review-form textarea{
-width:100%;
-padding:10px;
-margin:5px 0;
-border:1px solid #ccc;
-border-radius:5px;
-}
-.review-form button{
-background:green;
+padding:20px;
 color:white;
-padding:10px;
-border:none;
-border-radius:5px;
-cursor:pointer;
 }
 
-.map iframe{width:100%;height:300px;border:0;border-radius:10px;}
-
-footer{
-background:#111;color:white;text-align:center;padding:20px;margin-top:20px;
+.hero-content{
+max-width:900px;
 }
 
-.floating{
-position:fixed;
-bottom:20px;
-right:20px;
-background:green;
-color:white;
-padding:15px;
+.hero-content h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:24px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+margin:8px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
-animation:pulse 2s infinite;
+transition:0.3s;
+box-shadow:0 4px 10px rgba(0,0,0,.2);
 }
 
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
-@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.call-btn{
+background:#d4af37;
+color:black;
+}
+
+.whatsapp-btn{
+background:#25D366;
+color:white;
+}
+
+.meesho-btn{
+background:#f43397;
+color:white;
+}
+
+.instagram-btn{
+background:#E1306C;
+color:white;
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+color:#0d1b3e;
+margin-bottom:45px;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.9;
+font-size:18px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature-box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+text-align:center;
+transition:0.4s;
+}
+
+.feature-box:hover{
+transform:translateY(-6px);
+}
+
+.feature-box h3{
+margin-bottom:12px;
+color:#0d1b3e;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.gallery img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:15px;
+transition:0.4s;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.gallery img:hover{
+transform:scale(1.04);
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.contact{
+background:#0d1b3e;
+color:white;
+border-radius:20px;
+text-align:center;
+}
+
+.contact p{
+margin:12px 0;
+font-size:18px;
+}
+
+.map-btn{
+display:inline-block;
+margin-top:20px;
+background:#d4af37;
+color:black;
+padding:14px 28px;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+z-index:999;
+animation:float 2s infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-5px)}
+100%{transform:translateY(0)}
+}
+
+footer{
+background:#071126;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+footer p{
+margin:5px 0;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>Rajmani Suitting Shirting</h1>
-<p>Premium Fabrics & Latest Collection</p>
-</header>
+
+<div class="logo-area">
+
+<img src="./logo.png" alt="Rajmani Logo">
+
+<div class="logo">
+RAJMANI SUITING SHIRTING
+</div>
+
+</div>
 
 <nav>
-<a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#reviews">Reviews</a>
+<a href="#about">About</a>
+<a href="#collection">Collection</a>
+<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<section class="slider" id="home">
-<div class="slides">
-<div class="slide slide1"></div>
-<div class="slide slide2"></div>
-<div class="slide slide3"></div>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Premium Suiting & Shirting Collection</h1>
+
+<p>
+Quality Fabrics • Elegant Designs • Trusted Service
+</p>
+
+<a class="btn call-btn"
+href="tel:+919687286173">
+
+📞 Call Now
+
+</a>
+
+<a class="btn whatsapp-btn"
+href="https://wa.me/919687286173"
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<a class="btn meesho-btn"
+href="https://www.meesho.com/RAJMANISUITINGSHRTING?_ms=3.0.1"
+target="_blank">
+
+🛒 Shop on Meesho
+
+</a>
+
+<a class="btn instagram-btn"
+href="https://www.instagram.com/rajmani_cotton.fab"
+target="_blank">
+
+📸 Instagram
+
+</a>
+
+<a class="btn whatsapp-btn"
+href="https://chat.whatsapp.com/IujMp5j6Tk1F7D9sDGQS5s?s=cl&p=a&ilr=0"
+target="_blank">
+
+👥 WhatsApp Group
+
+</a>
+
 </div>
+
 </section>
 
-<section class="section" id="products">
-<h2>Our Products</h2>
-<div class="products">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1521334884684-d80222895322" />
-<h3>Premium Shirt Fabric</h3>
-<p>₹499</p>
-<a class="btn whatsapp" href="https://wa.me/919687286173">Order</a>
+<section id="about">
+
+<h2 class="section-title">
+About Us
+</h2>
+
+<div class="about">
+
+<p>
+Welcome to Rajmani Suiting Shirting,
+your trusted destination for premium
+suiting and shirting fabrics in Deesa.
+
+We provide high-quality suiting,
+designer shirting,
+wedding collections,
+cotton fabrics and latest fashion trends
+with trusted customer service.
+</p>
+
 </div>
-</div>
+
 </section>
 
-<!-- REVIEWS SYSTEM -->
-<section class="section" id="reviews">
-<h2>Customer Reviews</h2>
+<section id="collection">
 
-<div class="review-form">
-<h3>Leave Your Review</h3>
-<input type="text" id="name" placeholder="Your Name" />
-<textarea id="message" placeholder="Your Review"></textarea>
-<button onclick="addReview()">Submit Review</button>
+<h2 class="section-title">
+Our Collection
+</h2>
+
+<div class="features">
+
+<div class="feature-box">
+<h3>Premium Suiting</h3>
+<p>Elegant fabrics for formal and professional wear.</p>
 </div>
 
-<div class="reviews" id="reviewList"></div>
+<div class="feature-box">
+<h3>Designer Shirting</h3>
+<p>Modern styles and premium shirt fabrics.</p>
+</div>
+
+<div class="feature-box">
+<h3>Wedding Collection</h3>
+<p>Exclusive fabrics for weddings and celebrations.</p>
+</div>
+
+<div class="feature-box">
+<h3>Latest Designs</h3>
+<p>Trending and newly arrived collections.</p>
+</div>
+
+</div>
+
 </section>
 
-<section class="section" id="contact">
-<h2>Contact</h2>
-<p>📞 9687286173</p>
-<p>📍 Deesa, Gujarat</p>
+<section id="gallery">
+
+<h2 class="section-title">
+Gallery
+</h2>
+
+<div class="gallery">
+
+<img src="./shop1.jpeg" alt="Shop Photo 1">
+<img src="./shop2.jpeg" alt="Shop Photo 2">
+<img src="./shop3.jpeg" alt="Shop Photo 3">
+<img src="./shop4.jpeg" alt="Shop Photo 4">
+<img src="./shop5.jpeg" alt="Shop Photo 5">
+<img src="./shop6.jpeg" alt="Shop Photo 6">
+<img src="./shop7.jpeg" alt="Shop Photo 7">
+
+</div>
+
 </section>
 
-<a class="floating" href="https://wa.me/919687286173">WhatsApp</a>
+<section id="contact" class="contact">
+
+<h2 class="section-title" style="color:white;">
+Contact Us
+</h2>
+
+<p>📍 Aroma Shopping Center, Deesa</p>
+
+<p>📞 +91 96872 86173</p>
+
+<p>📞 +91 88498 83598</p>
+
+<p>💬 WhatsApp: +91 96872 86173</p>
+
+<a class="map-btn"
+href="https://maps.app.goo.gl/B8yM2pvhivuZiJ5x9?g_st=ac"
+target="_blank">
+
+📍 View Location
+
+</a>
+
+<br><br>
+
+<a class="btn meesho-btn"
+href="https://www.meesho.com/RAJMANISUITINGSHRTING?_ms=3.0.1"
+target="_blank">
+
+🛒 Visit Our Meesho Store
+
+</a>
+
+</section>
+
+<a class="whatsapp"
+href="https://wa.me/919687286173"
+target="_blank">
+
+WhatsApp
+
+</a>
 
 <footer>
-<p>© 2026 Rajmani Suitting Shirting</p>
+
+<p>
+© 2026 Rajmani Suiting Shirting | All Rights Reserved
+</p>
+
+<p>
+Premium Suiting & Shirting Collection in Deesa
+</p>
+
 </footer>
-
-<script>
-function loadReviews(){
-let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
-let html = "";
-reviews.forEach(r => {
-html += `<div class='review'>⭐️⭐️⭐️⭐️⭐️<br>${r.message}<h4>- ${r.name}</h4></div>`;
-});
-document.getElementById("reviewList").innerHTML = html;
-}
-
-function addReview(){
-let name = document.getElementById("name").value;
-let message = document.getElementById("message").value;
-if(name=="" || message=="") return;
-
-let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
-reviews.unshift({name,message});
-localStorage.setItem("reviews", JSON.stringify(reviews));
-
-document.getElementById("name").value="";
-document.getElementById("message").value="";
-
-loadReviews();
-}
-
-loadReviews();
-</script>
 
 </body>
 </html>
