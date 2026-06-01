@@ -19,9 +19,12 @@ body{
 }
 
 header{
-    <img src="logo.png.png"
-     alt="Rajmani Suiting Shirting"
-     style="width:180px;margin-top:20px;">
+    background:#0d1b3e;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
@@ -81,20 +84,10 @@ section{
 }
 
 .about{
-    <section>
-    <h2 style="text-align:center;">Our Collection</h2>
-
-    <div style="display:flex;flex-wrap:wrap;gap:15px;justify-content:center;padding:20px;">
-
-        <img src="shop1.jpg.jpeg" width="350">
-        <img src="shop2.jpg.jpeg" width="350">
-        <img src="shop3.jpg.jpeg" width="350">
-        <img src="shop4.jpg.jpeg" width="350">
-        <img src="shop5.jpg.jpeg" width="350">
-        <img src="shop6.jpg.jpeg" width="350">
-
-    </div>
-</section>
+    text-align:center;
+    line-height:1.8;
+    max-width:900px;
+    margin:auto;
 }
 
 .features{
